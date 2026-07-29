@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx -v)",
+      "PowerShell(Get-Command py -ErrorAction SilentlyContinue)",
+      "PowerShell(Get-Command python -ErrorAction SilentlyContinue)",
+      "PowerShell(try { $r = Invoke-WebRequest -Uri \"http://localhost:5173/index.html\" -UseBasicParsing; \"Status: $\\($r.StatusCode\\)  Length: $\\($r.RawContentLength\\)  ContentBytes: $\\($r.RawContentStream.Length\\)\" } catch { \"ERR: $_\" })",
+      "PowerShell(\\(Get-Item \"C:\\\\Users\\\\jekabs\\\\Desktop\\\\Webneks\\\\index.html\"\\).Length)"
+    ]
+  }
+}
