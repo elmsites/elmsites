@@ -8,22 +8,77 @@
      Values may contain HTML (e.g. <span class="kw">…</span>, <br>). */
   var T = {
     /* shared nav + footer */
-    'nav.story':   { lv: 'Mans stāsts', ru: 'Моя история' },
-    'nav.about':   { lv: 'Par mani', ru: 'Обо мне' },
+    'nav.story':   { lv: 'Mūsu stāsts', ru: 'Наша история' },
+    'nav.about':   { lv: 'Par mums', ru: 'О нас' },
     'nav.contact': { lv: 'Kontakti', ru: 'Контакты' },
     'nav.cta':     { lv: ' Sazināties', ru: ' Связаться' },
     'footer.tagline': {
-      lv: 'Mājaslapas uzņēmumiem visā pasaulē · Projektē un būvē viens cilvēks.',
-      ru: 'Сайты для бизнеса по всему миру · Проектирует и создаёт один человек.'
+      lv: 'Mājaslapas uzņēmumiem visā pasaulē · Projektē un būvē jauna komanda.',
+      ru: 'Сайты для бизнеса по всему миру · Проектирует и создаёт молодая команда.'
     },
     'footer.copy': {
-      lv: '© 2026 Elmsites · Bāze Rīgā, strādāju visā pasaulē',
-      ru: '© 2026 Elmsites · База в Риге, работаю по всему миру'
+      lv: '© 2026 Elmsites · Visas tiesības aizsargātas · Bāze Rīgā, strādājam visā pasaulē',
+      ru: '© 2026 Elmsites · Все права защищены · База в Риге, работаем по всему миру'
     },
 
     /* shared buttons */
-    'btn.demo':       { lv: 'Saņemt bezmaksas demo', ru: 'Получить бесплатное демо' },
-    'btn.ourstory':   { lv: 'Mans stāsts', ru: 'Моя история' },
+    'btn.demo':       { lv: 'Pierakstīties', ru: 'Записаться' },
+
+    /* ---- SIGNUP ---- */
+    'signup.label': { lv: 'Pieraksts', ru: 'Запись' },
+    'signup.h1': {
+      lv: 'Sāksim ar <span class="kw">īsu sarunu.</span>',
+      ru: 'Начнём с <span class="kw">короткого разговора.</span>'
+    },
+    'signup.sub': {
+      lv: 'Atstājiet savus kontaktus, un mēs sazināsimies vienas darba dienas laikā. Bez maksas un bez saistībām.',
+      ru: 'Оставьте свои контакты, и мы свяжемся с вами в течение одного рабочего дня. Бесплатно и без обязательств.'
+    },
+    'form.name':     { lv: 'Jūsu vārds', ru: 'Ваше имя' },
+    'form.phone':    { lv: 'Tālruņa numurs', ru: 'Номер телефона' },
+    'form.email':    { lv: 'E-pasts', ru: 'Эл. почта' },
+    'form.optional': { lv: '(nav obligāti)', ru: '(необязательно)' },
+    'form.company':  { lv: 'Uzņēmuma nosaukums <span class="f-opt">(nav obligāti)</span>', ru: 'Название компании <span class="f-opt">(необязательно)</span>' },
+    'form.package':  { lv: 'Kura pakete jūs interesē?', ru: 'Какой пакет вас интересует?' },
+    'form.pkg.unsure': { lv: 'Vēl nezinu', ru: 'Пока не знаю' },
+    'form.details':  { lv: 'Pastāstiet par savu uzņēmumu <span class="f-opt">(nav obligāti)</span>', ru: 'Расскажите о своём бизнесе <span class="f-opt">(необязательно)</span>' },
+    'form.submit':   { lv: 'Pierakstīties', ru: 'Записаться' },
+    'form.note': {
+      lv: 'Jūsu kontaktus izmantojam tikai tāpēc, lai sazinātos par mājaslapu. Neko citu, nekad.',
+      ru: 'Ваши контакты нужны нам только для связи по поводу сайта. Ничего больше, никогда.'
+    },
+    'form.err.send': {
+      lv: 'Neizdevās nosūtīt. Lūdzu, mēģiniet vēlreiz vai rakstiet uz birznieks@elmsites.com.',
+      ru: 'Не удалось отправить. Попробуйте ещё раз или напишите на birznieks@elmsites.com.'
+    },
+    'form.mail.h': { lv: 'Atvērām jūsu e-pasta programmu', ru: 'Мы открыли вашу почтовую программу' },
+    'form.mail.p': {
+      lv: 'Lūdzu, nospiediet Sūtīt, lai pieteikums nonāktu pie mums. Ja programma neatvērās, rakstiet uz birznieks@elmsites.com vai zvaniet +371 28302429.',
+      ru: 'Пожалуйста, нажмите Отправить, чтобы заявка дошла до нас. Если программа не открылась, напишите на birznieks@elmsites.com или позвоните +371 28302429.'
+    },
+    'form.done.h': { lv: 'Paldies, saņēmām!', ru: 'Спасибо, мы получили заявку!' },
+    'form.done.p': {
+      lv: 'Sazināsimies vienas darba dienas laikā. Ja steidzami, zvaniet uz +371 28302429.',
+      ru: 'Свяжемся с вами в течение одного рабочего дня. Если срочно, звоните на +371 28302429.'
+    },
+    'form.done.back': { lv: 'Atpakaļ uz sākumu', ru: 'Вернуться на главную' },
+    'signup.p1.h': { lv: 'Īss zvans', ru: 'Короткий звонок' },
+    'signup.p1.p': {
+      lv: 'Atzvanām, lai saprastu jūsu uzņēmumu, klientus un to, kas mājaslapai jāpanāk.',
+      ru: 'Перезваниваем, чтобы понять ваш бизнес, клиентов и задачу сайта.'
+    },
+    'signup.p2.h': { lv: 'Fiksēts piedāvājums', ru: 'Фиксированное предложение' },
+    'signup.p2.p': {
+      lv: 'Skaidra cena un apjoms rakstiski. Bez stundu likmēm, bez peldošiem cipariem.',
+      ru: 'Понятная цена и объём письменно. Без почасовой оплаты и плавающих цифр.'
+    },
+    'signup.p3.h': { lv: 'Izstrāde un starts', ru: 'Разработка и запуск' },
+    'signup.p3.p': {
+      lv: 'Uzbūvējam mājaslapu no nulles, palaižam to un paliekam sasniedzami turpmākajiem labojumiem.',
+      ru: 'Создаём сайт с нуля, запускаем его и остаёмся на связи для дальнейших правок.'
+    },
+
+    'btn.ourstory':   { lv: 'Mūsu stāsts', ru: 'Наша история' },
     'btn.start':      { lv: 'Sākt projektu', ru: 'Начать проект' },
     'btn.workwithus': { lv: 'Strādāsim kopā', ru: 'Работать с нами' },
 
@@ -40,8 +95,8 @@
       ru: 'Elmsites создаёт сайты, интернет-магазины и SEO, которое помогает клиентам вас найти.'
     },
     'home.feat.lead': {
-      lv: 'Es uzbūvēju <span class="kw">visu no sākuma līdz beigām</span> — dizainu, kodu un to slīpējumu, kāda vairumam vietējo mājaslapu nekad nav.',
-      ru: 'Я делаю <span class="kw">всё целиком</span> — дизайн, код и ту отточенность, которой у большинства местных сайтов не бывает.'
+      lv: 'Mēs uzbūvējam <span class="kw">visu no sākuma līdz beigām</span>: dizainu, kodu un to slīpējumu, kāda vairumam vietējo mājaslapu nekad nav.',
+      ru: 'Мы делаем <span class="kw">всё целиком</span>: дизайн, код и ту отточенность, которой у большинства местных сайтов не бывает.'
     },
     'home.card1.h': { lv: 'Individuāls dizains', ru: 'Индивидуальный дизайн' },
     'home.card1.p': {
@@ -50,13 +105,13 @@
     },
     'home.card2.h': { lv: 'Ātra izpilde', ru: 'Быстрый результат' },
     'home.card2.p': {
-      lv: 'Noslīpēta, darboties gatava mājaslapa vienā līdz divās nedēļās. Strādāju ātri, neaizmirstot par detaļām.',
-      ru: 'Отполированный, готовый сайт за одну-две недели. Работаю быстро, не жертвуя деталями.'
+      lv: 'Noslīpēta, darboties gatava mājaslapa vienā līdz divās nedēļās. Strādājam ātri, neaizmirstot par detaļām.',
+      ru: 'Отполированный, готовый сайт за одну-две недели. Работаем быстро, не жертвуя деталями.'
     },
     'home.card3.h': { lv: 'Uzturēšana iekļauta', ru: 'Поддержка включена' },
     'home.card3.p': {
-      lv: 'Palaišana ir sākums, ne beigas. Rūpējos par atjauninājumiem un izmaiņām, lai jūsu mājaslapa vienmēr būtu aktuāla.',
-      ru: 'Запуск — это начало, а не конец. Беру на себя обновления и изменения, чтобы сайт оставался актуальным.'
+      lv: 'Palaišana ir sākums, nevis beigas. Rūpējamies par atjauninājumiem un izmaiņām, lai jūsu mājaslapa vienmēr būtu aktuāla.',
+      ru: 'Запуск открывает работу, а не завершает её. Мы берём на себя обновления и изменения, чтобы сайт оставался актуальным.'
     },
 
     'home.wyg.label': { lv: 'Ko jūs iegūstat', ru: 'Что вы получаете' },
@@ -65,11 +120,6 @@
       lv: 'Katra mājaslapa top ātri, ielādējas ātri un pieder jums.',
       ru: 'Каждый сайт быстро создаётся, быстро загружается и принадлежит вам.'
     },
-    'home.wyg.days.num': { lv: '7 dienas', ru: '7 дней' },
-    'home.wyg.days.h': {
-      lv: 'No brīža, kad saņemu materiālus. Kavēju — nemaksājat.',
-      ru: 'С момента, когда получаю материалы. Опоздаю — не платите.'
-    },
     'home.wyg.speed.h':  { lv: 'Ielāde zem sekundes', ru: 'Загрузка меньше секунды' },
     'home.wyg.speed.p': {
       lv: 'Ātrums nosaka pozīcijas un pirmo iespaidu. Katra mājaslapa ir optimizēta Google un telefoniem.',
@@ -77,32 +127,38 @@
     },
     'home.wyg.cust.h': { lv: 'Veidots, lai piesaistītu klientus', ru: 'Создано, чтобы приводить клиентов' },
     'home.wyg.cust.p': {
-      lv: 'Atsauksmes, kartes un zvans ar vienu pieskārienu iebūvēti — apmeklētāji kļūst par klientiem, ne aizbraucējiem.',
-      ru: 'Отзывы, карты и звонок в один тап встроены — посетители превращаются в заявки, а не уходят.'
+      lv: 'Atsauksmes, kartes un zvans ar vienu pieskārienu iebūvēti, tāpēc apmeklētāji kļūst par klientiem, nevis aizbraucējiem.',
+      ru: 'Отзывы, карты и звонок в один тап встроены, поэтому посетители превращаются в заявки, а не уходят.'
     },
     'home.wyg.own.h': { lv: 'Viss pieder jums', ru: 'Всё принадлежит вам' },
     'home.wyg.own.p': {
-      lv: 'Kods, domēns, saturs — viss jūsu jau no pirmās dienas. Nekādu platformas maksu, nekādu ķīlnieku abonementu.',
-      ru: 'Код, домен, контент — всё ваше с первого дня. Никаких платежей за платформу, никаких абонементов-заложников.'
+      lv: 'Kods, domēns un saturs jums pieder jau no pirmās dienas. Nekādu platformas maksu, nekādu ķīlnieku abonementu.',
+      ru: 'Код, домен и контент принадлежат вам с первого дня. Никаких платежей за платформу, никаких абонементов-заложников.'
     },
     'home.wyg.lang.h': { lv: 'Katrs klients jūtas kā mājās', ru: 'Каждый клиент чувствует себя как дома' },
     'home.wyg.lang.p': {
-      lv: 'Latviešu, angļu, krievu — viena mājaslapa, kas sveic katru apmeklētāju viņa valodā.',
-      ru: 'Латышский, английский, русский — один сайт, который встречает каждого на его языке.'
+      lv: 'Latviešu, angļu un krievu valodā. Viena mājaslapa, kas sveic katru apmeklētāju viņa valodā.',
+      ru: 'Латышский, английский и русский. Один сайт, который встречает каждого на его языке.'
     },
 
-    /* demo showcase — design samples, never described as client work */
-    'demos.label': { lv: 'Demo projekti', ru: 'Демо-проекты' },
-    'demos.h':     { lv: 'Dizaina paraugi.', ru: 'Образцы дизайна.' },
-    'demos.sub': {
-      lv: 'Šie ir mani demo projekti — dizaina paraugi, nevis klientu darbi. Katrs uzbūvēts no nulles, lai parādītu, kā es strādāju.',
-      ru: 'Это мои демо-проекты — образцы дизайна, а не работы для клиентов. Каждый собран с нуля, чтобы показать, как я работаю.'
+    /* clients */
+    'clients.label': { lv: 'Klienti', ru: 'Клиенты' },
+    'clients.h':     { lv: 'Uzņēmumi, kuriem esam būvējuši.', ru: 'Компании, для которых мы строили.' },
+    'clients.sub': {
+      lv: 'Īsti projekti, kas darbojas jau šodien. Katra mājaslapa projektēta un uzkodēta no nulles.',
+      ru: 'Настоящие проекты, которые работают уже сегодня. Каждый сайт спроектирован и написан с нуля.'
     },
-    'demos.badge': { lv: 'Demo', ru: 'Демо' },
-    'demos.hint':  { lv: 'Velciet, lai redzētu vairāk →', ru: 'Листайте, чтобы увидеть больше →' },
-
+    'clients.c1.quote': {
+      lv: '[ Šeit ievietojiet RUM AUTO īstos vārdus ]',
+      ru: '[ Вставьте сюда настоящие слова RUM AUTO ]'
+    },
+    'clients.c1.role': { lv: 'Autoserviss, Rīga', ru: 'Автосервис, Рига' },
+    'clients.t1': { lv: 'Fiksēta cena, saskaņota rakstiski', ru: 'Фиксированная цена, согласованная письменно' },
+    'clients.t2': { lv: 'Kods un domēns pieder jums', ru: 'Код и домен принадлежат вам' },
+    'clients.t3': { lv: 'Latviski, angliski un krieviski', ru: 'На латышском, английском и русском' },
+    'clients.t4': { lv: 'Runājat tieši ar tiem, kas būvē', ru: 'Общаетесь напрямую с теми, кто строит' },
     /* process strip */
-    'process.label': { lv: 'Kā es strādāju', ru: 'Как я работаю' },
+    'process.label': { lv: 'Kā mēs strādājam', ru: 'Как мы работаем' },
     'process.h':     { lv: 'Četri soļi, bez pārsteigumiem.', ru: 'Четыре шага, без сюрпризов.' },
     'process.s1.h':  { lv: 'Iepazīšanās zvans', ru: 'Знакомство по телефону' },
     'process.s1.p': {
@@ -116,20 +172,20 @@
     },
     'process.s3.h':  { lv: 'Izstrāde', ru: 'Разработка' },
     'process.s3.p': {
-      lv: 'Projektēju un uzkodēju mājaslapu no nulles, rādot progresu, kamēr tā top.',
-      ru: 'Проектирую и кодирую сайт с нуля, показывая прогресс по ходу работы.'
+      lv: 'Projektējam un uzkodējam mājaslapu no nulles, rādot progresu, kamēr tā top.',
+      ru: 'Проектируем и кодируем сайт с нуля, показывая прогресс по ходу работы.'
     },
     'process.s4.h':  { lv: 'Startēšana un atbalsts', ru: 'Запуск и поддержка' },
     'process.s4.p': {
-      lv: 'Palaižu lapu, nododu jums visu un palieku sasniedzams turpmākajiem labojumiem.',
-      ru: 'Запускаю сайт, передаю вам всё и остаюсь на связи для дальнейших правок.'
+      lv: 'Palaižam lapu, nododam jums visu un paliekam sasniedzami turpmākajiem labojumiem.',
+      ru: 'Запускаем сайт, передаём вам всё и остаёмся на связи для дальнейших правок.'
     },
 
     'home.pricing.label': { lv: 'Cenas', ru: 'Цены' },
     'home.pricing.h':     { lv: 'Viena cena un tas pieder jums.', ru: 'Одна цена. Всё ваше.' },
     'home.pricing.sub': {
       lv: 'Trīs paketes, bez abonementiem, bez aģentūras saistībām. Papildinājumi tikai tad, kad tie vajadzīgi.',
-      ru: 'Три пакета, без подписок, без привязки к агентству. Дополнения — только когда они нужны.'
+      ru: 'Три пакета, без подписок, без привязки к агентству. Дополнения добавляем только тогда, когда они нужны.'
     },
     'pill.popular': { lv: 'Populārākais', ru: 'Самый популярный' },
     'pill.addons':  { lv: 'Papildinājumi', ru: 'Дополнения' },
@@ -140,26 +196,26 @@
     'pro.f2': { lv: 'Google atsauksmes un kartes iebūvētas', ru: 'Google-отзывы и карты встроены' },
     'pro.f3': { lv: 'Pamata SEO un ielāde zem sekundes', ru: 'Базовое SEO и загрузка меньше секунды' },
     'pro.f4': { lv: 'Foto atlase un mākslinieciskā vadība', ru: 'Подбор фото и арт-дирекшн' },
-    'pro.f5': { lv: '2 labojumu kārtas — gatavs ~10 dienās', ru: '2 раунда правок — готово за ~10 дней' },
+    'pro.f5': { lv: '2 labojumu kārtas, gatavs ~10 dienās', ru: '2 раунда правок, готово за ~10 дней' },
 
     'basic.f1': { lv: 'Viena lapa, veidota vispirms telefoniem', ru: 'Одна страница, в первую очередь под телефоны' },
     'basic.f2': { lv: 'Kontaktforma + zvans ar pieskārienu un WhatsApp', ru: 'Форма связи + звонок в тап и WhatsApp' },
     'basic.f3': { lv: 'Google Maps iegulšana', ru: 'Встроенная Google-карта' },
     'basic.f4': { lv: 'Gatavs 5 dienās', ru: 'Готово за 5 дней' },
-    'basic.f5': { lv: 'Viss pieder jums — bez ikmēneša maksas', ru: 'Всё ваше — без ежемесячной платы' },
+    'basic.f5': { lv: 'Viss pieder jums, bez ikmēneša maksas', ru: 'Всё ваше, без ежемесячной платы' },
 
     'max.f1': { lv: 'Viss no Pro', ru: 'Всё из Pro' },
     'max.f2': { lv: 'Rezervāciju vai pasūtījumu integrācija', ru: 'Интеграция бронирования или онлайн-заказов' },
-    'max.f3': { lv: 'Pilns tekstu saturs — uzrakstu katru vārdu', ru: 'Полный копирайтинг — пишу каждое слово' },
-    'max.f4': { lv: 'Prioritāra izstrāde — gatavs 7 dienās', ru: 'Приоритетная разработка — готово за 7 дней' },
+    'max.f3': { lv: 'Pilns tekstu saturs, uzrakstām katru vārdu', ru: 'Полный копирайтинг, пишем каждое слово' },
+    'max.f4': { lv: 'Prioritāra izstrāde, gatavs 7 dienās', ru: 'Приоритетная разработка, готово за 7 дней' },
     'max.f5': { lv: '30 dienas bezmaksas labojumu pēc palaišanas', ru: '30 дней бесплатных правок после запуска' },
 
-    'addon.1': { lv: 'Hostings un aprūpe — dublējumi, ikmēneša labojumi', ru: 'Хостинг и уход — резервные копии, ежемесячные правки' },
+    'addon.1': { lv: 'Hostings un aprūpe ar dublējumiem un ikmēneša labojumiem', ru: 'Хостинг и уход с резервными копиями и ежемесячными правками' },
     'addon.2': { lv: 'Papildu valoda (LV / EN / RU)', ru: 'Доп. язык (LV / EN / RU)' },
     'addon.3': { lv: 'Papildu lapa', ru: 'Доп. страница' },
     'addon.4': { lv: 'Logo + mini zīmola komplekts', ru: 'Логотип + мини-брендбук' },
     'addon.5': { lv: 'Pilns teksts (iekļauts Max)', ru: 'Полный копирайтинг (входит в Max)' },
-    'addon.6': { lv: 'Steidzama piegāde — 48h', ru: 'Срочная сдача — 48 ч' },
+    'addon.6': { lv: 'Steidzama piegāde 48h laikā', ru: 'Срочная сдача за 48 ч' },
     'addon.7': { lv: 'Google Business izveide + atsauksmju QR', ru: 'Настройка Google Business + QR для отзывов' },
     'addon.8': { lv: 'Pasūtījumi tiešsaistē / e-komercija', ru: 'Онлайн-заказы / интернет-магазин' },
     'addon.8.price': { lv: 'no €200', ru: 'от €200' },
@@ -170,23 +226,23 @@
     },
 
     /* ---- ABOUT ---- */
-    'about.label':  { lv: 'Par mani', ru: 'Обо мне' },
+    'about.label':  { lv: 'Par mums', ru: 'О нас' },
     'about.h1': {
-      lv: 'Viens cilvēks, kas <span class="kw">piegādā.</span>',
-      ru: 'Один человек, который <span class="kw">доводит до конца.</span>'
+      lv: 'Komanda, kas <span class="kw">piegādā.</span>',
+      ru: 'Команда, которая <span class="kw">доводит до конца.</span>'
     },
     'about.sub': {
-      lv: 'Es projektēju un veidoju individuālas mājaslapas uzņēmumiem jebkur — ātri, bez liekās aģentūru birokrātijas.',
-      ru: 'Я проектирую и создаю индивидуальные сайты для бизнеса где угодно — быстро, без агентской раздутости.'
+      lv: 'Mēs projektējam un veidojam individuālas mājaslapas uzņēmumiem jebkur, ātri un bez liekās aģentūru birokrātijas.',
+      ru: 'Мы проектируем и создаём индивидуальные сайты для бизнеса где угодно, быстро и без агентской раздутости.'
     },
     'about.lead': {
-      lv: 'Es daru <span class="kw">vienu lietu</span> un daru to labi: veidoju mājaslapas, kas liek uzņēmumiem tiešsaistē izskatīties tikpat labi kā klātienē.',
-      ru: 'Я делаю <span class="kw">одно дело</span> и делаю его хорошо: создаю сайты, на которых бизнес выглядит так же хорошо, как вживую.'
+      lv: 'Mēs daram <span class="kw">vienu lietu</span> un daram to labi: veidojam mājaslapas, kas liek uzņēmumiem tiešsaistē izskatīties tikpat labi kā klātienē.',
+      ru: 'Мы делаем <span class="kw">одно дело</span> и делаем его хорошо: создаём сайты, на которых бизнес выглядит так же хорошо, как вживую.'
     },
     'about.card1.h': { lv: 'Personīgi, ne korporatīvi', ru: 'Лично, а не корпоративно' },
     'about.card1.p': {
-      lv: 'Jūs runājat tieši ar cilvēku, kas veido jūsu mājaslapu — ar mani. Nekādu klientu vadītāju, nekādas vilcināšanās, tikai ātra un godīga saziņa.',
-      ru: 'Вы общаетесь напрямую с тем, кто делает ваш сайт — со мной. Никаких аккаунт-менеджеров и беготни, только быстрое, честное общение.'
+      lv: 'Jūs runājat tieši ar mums, cilvēkiem, kas veido jūsu mājaslapu. Nekādu klientu vadītāju, nekādas vilcināšanās, tikai ātra un godīga saziņa.',
+      ru: 'Вы общаетесь напрямую с нами, с теми, кто делает ваш сайт. Никаких аккаунт-менеджеров и беготни, только быстрое, честное общение.'
     },
     'about.card2.h': { lv: 'Mūsdienīgi pēc noklusējuma', ru: 'Современно по умолчанию' },
     'about.card2.p': {
@@ -195,8 +251,8 @@
     },
     'about.card3.h': { lv: 'Veidots, lai kalpotu', ru: 'Создано надолго' },
     'about.card3.p': {
-      lv: 'Es nepazūdu pēc palaišanas. Atjauninājumi, labojumi un uzturēšana ir daļa no tā, kā strādāju.',
-      ru: 'Я не исчезаю после запуска. Обновления, правки и поддержка — часть моей работы.'
+      lv: 'Mēs nepazūdam pēc palaišanas. Atjauninājumi, labojumi un uzturēšana ir daļa no tā, kā strādājam.',
+      ru: 'Мы не исчезаем после запуска. Обновления, правки и поддержка входят в нашу работу.'
     },
     'about.stat1.big': { lv: '1–2 ned.', ru: '1–2 нед.' },
     'about.stat1.cap': { lv: 'Izpildes laiks', ru: 'Срок' },
@@ -210,36 +266,36 @@
     },
 
     /* ---- OUR STORY ---- */
-    'story.label': { lv: 'Mans stāsts', ru: 'Моя история' },
+    'story.label': { lv: 'Mūsu stāsts', ru: 'Наша история' },
     'story.h1': {
       lv: 'Sākās kā projekts.<br>Tagad tas ir <span class="kw">pilna laika darbs.</span>',
       ru: 'Начиналось как проект.<br>Теперь это <span class="kw">основная работа.</span>'
     },
     'story.sub': {
-      lv: 'Tas, kas sākās Rīgā kā pusaudža aizraušanās ar mājaslapu veidošanu, pārtapa par kaut ko īstu — darbu, kurā palīdzu uzņēmumiem visā pasaulē.',
-      ru: 'То, что началось в Риге как подростковое увлечение сайтами, превратилось в нечто настоящее — работу, в которой я помогаю бизнесу по всему миру.'
+      lv: 'Tas, kas sākās Rīgā kā pusaudžu aizraušanās ar mājaslapu veidošanu, pārtapa par kaut ko īstu: komandu, kas palīdz uzņēmumiem visā pasaulē.',
+      ru: 'То, что началось в Риге как подростковое увлечение сайтами, превратилось в нечто настоящее: в команду, которая помогает бизнесу по всему миру.'
     },
     'story.muted': {
-      lv: 'Es esmu jauns un strādāju viens — un uzskatu to par priekšrocību, ne par kaut ko slēpjamu. Uzaugu tiešsaistē, strādāju ātri un rūpējos par darbu tā, ka tas redzams katrā mājaslapā.',
-      ru: 'Я молод и работаю один — и считаю это преимуществом, а не тем, что нужно скрывать. Я вырос в интернете, работаю быстро и отношусь к делу так, что это видно в каждом сайте.'
+      lv: 'Mēs esam jauna komanda un uzskatām to par priekšrocību, nevis par kaut ko slēpjamu. Uzaugām tiešsaistē, strādājam ātri un rūpējamies par darbu tā, ka tas redzams katrā mājaslapā.',
+      ru: 'Мы молодая команда и считаем это преимуществом, а не тем, что нужно скрывать. Мы выросли в интернете, работаем быстро и относимся к делу так, что это видно в каждом сайте.'
     },
     'story.tl1.when': { lv: 'Sākums', ru: 'Начало' },
     'story.tl1.h':    { lv: 'Blakusprojekts', ru: 'Побочный проект' },
     'story.tl1.p': {
-      lv: 'Tas sākās Rīgā, veidojot mājaslapas praksei — mācoties dizainu, kodu un to, kā uzņēmumi sevi parāda tiešsaistē. Jo vairāk uzbūvēju, jo vairāk redzēju, cik daudziem uzņēmumiem nebija nekā vai bija kaut kas novecojis.',
-      ru: 'Всё началось в Риге с сайтов ради практики — я учился дизайну, коду и тому, как бизнес представляет себя онлайн. Чем больше я делал, тем чаще видел, у скольких компаний нет ничего или что-то устаревшее.'
+      lv: 'Tas sākās Rīgā, veidojot mājaslapas praksei un mācoties dizainu, kodu un to, kā uzņēmumi sevi parāda tiešsaistē. Jo vairāk uzbūvējām, jo vairāk redzējām, cik daudziem uzņēmumiem nebija nekā vai bija kaut kas novecojis.',
+      ru: 'Всё началось в Риге с сайтов ради практики. Мы учились дизайну, коду и тому, как бизнес представляет себя онлайн. Чем больше мы делали, тем чаще видели, у скольких компаний нет ничего или что-то устаревшее.'
     },
     'story.tl2.when': { lv: 'Pavērsiens', ru: 'Поворот' },
     'story.tl2.h':    { lv: 'Visu uz vienu kārti', ru: 'Ва-банк' },
     'story.tl2.p': {
-      lv: 'Tas, kas sākās kā prakse, kļuva par mērķi. Es pārvērtu prasmes īstā darbā — Elmsites — pilnībā veltītā tam, lai uzņēmumiem dotu mājaslapas, ar kurām lepoties.',
-      ru: 'То, что было практикой, стало целью. Я превратил навыки в настоящее дело — Elmsites — полностью посвящённое тому, чтобы давать бизнесу сайты, которыми можно гордиться.'
+      lv: 'Tas, kas sākās kā prakse, kļuva par mērķi. Mēs pārvērtām prasmes īstā darbā ar nosaukumu Elmsites, kas pilnībā veltīts tam, lai uzņēmumiem dotu mājaslapas, ar kurām lepoties.',
+      ru: 'То, что было практикой, стало целью. Мы превратили навыки в настоящее дело под названием Elmsites, полностью посвящённое тому, чтобы давать бизнесу сайты, которыми можно гордиться.'
     },
     'story.tl3.when': { lv: 'Tagad', ru: 'Сейчас' },
     'story.tl3.h':    { lv: 'Pilna laika, ar visu sirdi', ru: 'Полная занятость, с головой' },
     'story.tl3.p': {
-      lv: 'Šodien tas ir tas, ko daru. Strādāju ar uzņēmumiem, lai kur tie būtu, projektēju un veidoju viņu mājaslapas no nulles un palieku, lai tās uzturētu. Jauns, izsalcis, šeit uz palikšanu.',
-      ru: 'Сегодня это то, чем я занимаюсь. Работаю с бизнесом, где бы он ни был, проектирую и создаю сайты с нуля и остаюсь, чтобы поддерживать их. Молодой, голодный, здесь надолго.'
+      lv: 'Šodien tas ir tas, ko daram. Strādājam ar uzņēmumiem, lai kur tie būtu, projektējam un veidojam viņu mājaslapas no nulles un paliekam, lai tās uzturētu. Jauni, izsalkuši, šeit uz palikšanu.',
+      ru: 'Сегодня это то, чем мы занимаемся. Работаем с бизнесом, где бы он ни был, проектируем и создаём сайты с нуля и остаёмся, чтобы поддерживать их. Молодые, голодные, здесь надолго.'
     },
     'story.cta.lead': {
       lv: 'Vai vēlaties būt daļa no <span class="kw">stāsta?</span>',
@@ -252,13 +308,9 @@
       lv: 'Padarīsim jūsu<br>uzņēmumu <span class="kw">tādu, kāds tam jābūt.</span>',
       ru: 'Сделаем так, чтобы ваш<br>бизнес <span class="kw">выглядел достойно.</span>'
     },
-    'contact.sub': {
-      lv: 'Pastāstiet par savu uzņēmumu, un es sagatavošu bezmaksas demo — bez saistībām, bez maksas.',
-      ru: 'Расскажите о своём бизнесе, и я соберу бесплатное демо — без обязательств и без оплаты.'
-    },
     'contact.muted': {
-      lv: 'Ātrākais veids, kā mani sasniegt, ir e-pasts. Uzrakstiet par savu uzņēmumu, un es ātri atbildēšu.',
-      ru: 'Быстрее всего связаться со мной по электронной почте. Напишите о своём бизнесе, и я быстро отвечу.'
+      lv: 'Ātrākais veids, kā mūs sasniegt, ir e-pasts. Uzrakstiet par savu uzņēmumu, un mēs ātri atbildēsim.',
+      ru: 'Быстрее всего связаться с нами по электронной почте. Напишите о своём бизнесе, и мы быстро ответим.'
     },
     'contact.m.email': { lv: 'E-pasts', ru: 'Эл. почта' },
     'contact.m.phone': { lv: 'Tālrunis', ru: 'Телефон' }

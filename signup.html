@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pierakstīties · Elmsites</title>
+<meta name="description" content="Pierakstieties uz īsu sarunu ar Elmsites. Atstājiet tālruni, e-pastu un dažus vārdus par savu uzņēmumu, un mēs sazināsimies vienas darba dienas laikā." />
+<link rel="canonical" href="https://elmsites.com/signup.html" />
+<meta property="og:title" content="Pierakstīties · Elmsites" />
+<meta property="og:description" content="Atstājiet savu kontaktinformāciju, un mēs sazināsimies vienas darba dienas laikā." />
+<meta property="og:url" content="https://elmsites.com/signup.html" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <nav class="nav" aria-label="Primary">
+    <a href="index.html" class="logo">Elmsites</a>
+    <div class="nav-pill">
+      <a href="our-story.html" data-i18n="nav.story">Our Story</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
+    </div>
+    <div class="nav-right">
+      <div class="lang-dock" role="navigation" aria-label="Language">
+        <a href="#" data-locale="en">EN</a>
+        <a href="#" data-locale="lv" aria-current="true">LV</a>
+        <a href="#" data-locale="ru">RU</a>
+      </div>
+      <a href="contact.html" class="nav-cta" aria-label="Contact Us"><span aria-hidden="true">✦</span><span class="cta-label" data-i18n="nav.cta"> Contact Us</span></a>
+    </div>
+  </nav>
+
+  <main id="main">
+    <section class="page-hero signup-hero"><div class="wrap">
+      <div class="label" data-i18n="signup.label">Sign up</div>
+      <h1 data-i18n="signup.h1">Let's start with a <span class="kw">short conversation.</span></h1>
+      <p data-i18n="signup.sub">Leave your details and we'll get back to you within one working day. No cost, no commitment.</p>
+    </div></section>
+
+    <section class="block signup-block"><div class="wrap">
+      <div class="signup-shell">
+
+        <form class="signup-form" id="signup-form" novalidate>
+          <div class="f-row">
+            <div class="field">
+              <input id="f-name" name="name" type="text" required placeholder=" " autocomplete="name" />
+              <label for="f-name" data-i18n="form.name">Your name</label>
+              <span class="f-err" data-err-for="f-name"></span>
+            </div>
+            <div class="field">
+              <input id="f-phone" name="phone" type="tel" required placeholder=" " autocomplete="tel" inputmode="tel" />
+              <label for="f-phone" data-i18n="form.phone">Phone number</label>
+              <span class="f-err" data-err-for="f-phone"></span>
+            </div>
+          </div>
+
+          <div class="field">
+            <input id="f-email" name="email" type="email" required placeholder=" " autocomplete="email" inputmode="email" />
+            <label for="f-email" data-i18n="form.email">Email</label>
+            <span class="f-err" data-err-for="f-email"></span>
+          </div>
+
+          <div class="field">
+            <input id="f-company" name="company" type="text" placeholder=" " autocomplete="organization" />
+            <label for="f-company" data-i18n="form.company">Business name <span class="f-opt" data-i18n="form.optional">(optional)</span></label>
+          </div>
+
+          <fieldset class="pkg">
+            <legend data-i18n="form.package">Which package interests you?</legend>
+            <div class="pkg-opts">
+              <label class="pkg-opt"><input type="radio" name="package" value="Basic" /><span class="pkg-name">Basic</span><span class="pkg-price">€250</span></label>
+              <label class="pkg-opt"><input type="radio" name="package" value="Pro" checked /><span class="pkg-name">Pro</span><span class="pkg-price">€500</span></label>
+              <label class="pkg-opt"><input type="radio" name="package" value="Max" /><span class="pkg-name">Max</span><span class="pkg-price">€750</span></label>
+              <label class="pkg-opt"><input type="radio" name="package" value="Nezinu" /><span class="pkg-name" data-i18n="form.pkg.unsure">Not sure yet</span></label>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <textarea id="f-details" name="details" rows="5" placeholder=" "></textarea>
+            <label for="f-details" data-i18n="form.details">Tell us about your business <span class="f-opt" data-i18n="form.optional">(optional)</span></label>
+          </div>
+
+          <div class="hp" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off" /></label></div>
+
+          <p class="form-error" id="form-error" hidden data-i18n="form.err.send">Could not send. Please try again, or email us at birznieks@elmsites.com.</p>
+
+          <button type="submit" class="submit-btn">
+            <span data-i18n="form.submit">Sign up</span>
+            <svg class="arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+
+          <p class="f-note" data-i18n="form.note">We only use your details to get in touch about your website. Nothing else, ever.</p>
+        </form>
+
+        <div class="signup-done" id="signup-done" hidden>
+          <div class="done-mark" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          </div>
+          <h2 data-i18n="form.done.h">Thanks, we've got it.</h2>
+          <p data-i18n="form.done.p">We'll be in touch within one working day. If it's urgent, call us on +371 28302429.</p>
+          <a href="index.html" class="btn btn-ghost" data-i18n="form.done.back">Back to home</a>
+        </div>
+
+        <div class="signup-done signup-mail" id="signup-mail" hidden>
+          <div class="done-mark mail-mark" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+          </div>
+          <h2 data-i18n="form.mail.h">We opened your email app</h2>
+          <p data-i18n="form.mail.p">Please press Send so your request reaches us. If nothing opened, write to birznieks@elmsites.com or call +371 28302429.</p>
+          <a href="index.html" class="btn btn-ghost" data-i18n="form.done.back">Back to home</a>
+        </div>
+
+        <aside class="signup-aside">
+          <div class="aside-item">
+            <div class="aside-n" aria-hidden="true">i.</div>
+            <h3 data-i18n="signup.p1.h">A short call</h3>
+            <p data-i18n="signup.p1.p">We call you back to understand your business, your customers and what the site has to do.</p>
+          </div>
+          <div class="aside-item">
+            <div class="aside-n" aria-hidden="true">ii.</div>
+            <h3 data-i18n="signup.p2.h">A fixed quote</h3>
+            <p data-i18n="signup.p2.p">A clear price and scope in writing. No hourly rates, no moving numbers.</p>
+          </div>
+          <div class="aside-item">
+            <div class="aside-n" aria-hidden="true">iii.</div>
+            <h3 data-i18n="signup.p3.h">Build and launch</h3>
+            <p data-i18n="signup.p3.p">We build the site from scratch, put it live, and stay reachable for updates afterwards.</p>
+          </div>
+        </aside>
+
+      </div>
+    </div></section>
+  </main>
+
+  <footer>
+    <div class="logo">Elmsites</div>
+    <div data-i18n="footer.tagline">Websites for businesses everywhere · Designed and built by a young team.</div>
+    <div style="margin-top:12px;opacity:.7;" data-i18n="footer.copy">© 2026 Elmsites · All rights reserved · Based in Riga, working worldwide</div>
+  </footer>
+
+  <script src="js/i18n.js" defer></script>
+  <script src="js/form.js" defer></script>
+</body>
+</html>

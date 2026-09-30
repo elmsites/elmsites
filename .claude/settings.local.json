@@ -5,7 +5,25 @@
       "PowerShell(Get-Command py -ErrorAction SilentlyContinue)",
       "PowerShell(Get-Command python -ErrorAction SilentlyContinue)",
       "PowerShell(try { $r = Invoke-WebRequest -Uri \"http://localhost:5173/index.html\" -UseBasicParsing; \"Status: $\\($r.StatusCode\\)  Length: $\\($r.RawContentLength\\)  ContentBytes: $\\($r.RawContentStream.Length\\)\" } catch { \"ERR: $_\" })",
-      "PowerShell(\\(Get-Item \"C:\\\\Users\\\\jekabs\\\\Desktop\\\\Webneks\\\\index.html\"\\).Length)"
+      "PowerShell(\\(Get-Item \"C:\\\\Users\\\\jekabs\\\\Desktop\\\\Webneks\\\\index.html\"\\).Length)",
+      "Bash(npx --yes shadcn@latest init -d --yes)",
+      "Bash(npx --yes shadcn@latest add badge sheet accordion select separator input label --yes --overwrite)",
+      "Bash(npm i *)",
+      "Bash(git check-ignore *)",
+      "Bash(echo \"exit=$? \\(1 = NOT ignored, which is what we want\\)\")",
+      "Bash(npx tsc *)",
+      "Bash(npx next *)",
+      "Bash(npm run *)",
+      "Bash(python -c ' *)",
+      "PowerShell($s = Get-Content 'C:\\\\Users\\\\jekabs\\\\Desktop\\\\Sourced\\\\lib\\\\products.ts' -Raw; $m = [regex]::Matches\\($s,'vendorCount: \\(\\\\d+\\)'\\); $all = $m | ForEach-Object { [int]$_.Groups[1].Value }; \"n=$\\($all.Count\\)\"; \"total=$\\(\\($all | Measure-Object -Sum\\).Sum\\)\"; \"excluding bundle=$\\(\\(\\($all | Measure-Object -Sum\\).Sum\\) - 1004\\)\")",
+      "Bash(node -e ' *)",
+      "Bash(ls -lt \"C:/Users/jekabs/Downloads\" 2>/dev/null | head -15; echo \"=== Desktop images ===\"; ls -lt \"C:/Users/jekabs/Desktop\" 2>/dev/null | grep -iE \"\\\\.\\(png|jpg|jpeg|webp\\)\" | head -10)",
+      "Bash(py --version)",
+      "Bash(python -c \"import PIL, numpy; print\\('PIL+numpy OK'\\)\")",
+      "Bash(node -e \"require\\('sharp'\\);console.log\\('sharp OK'\\)\")",
+      "Bash(mkdir -p public/products)",
+      "Bash(npm view *)",
+      "Bash(npm install *)"
     ]
   }
 }

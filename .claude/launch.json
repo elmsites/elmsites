@@ -7,6 +7,25 @@
       "runtimeArgs": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "server.ps1"],
       "port": 5173,
       "autoPort": true
+    },
+    {
+      "name": "rumauto-static",
+      "runtimeExecutable": "powershell.exe",
+      "runtimeArgs": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "../rumauto/server.ps1"],
+      "port": 5174,
+      "autoPort": true
+    },
+    {
+      "name": "sourced-dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "../Sourced", "run", "dev"],
+      "port": 3000
+    },
+    {
+      "name": "cenas",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "../cenas", "run", "dev", "--", "--port", "3100"],
+      "port": 3100
     }
   ]
 }
