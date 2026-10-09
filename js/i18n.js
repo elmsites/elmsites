@@ -141,9 +141,42 @@
       ru: 'Латышский, английский и русский. Один сайт, который встречает каждого на его языке.'
     },
 
+    'nav.work': { lv: 'Darbi', ru: 'Работы' },
+
+    /* work teaser (home) */
+    'teaser.line': {
+      lv: 'Pirmais klients jau ir tiešsaistē.',
+      ru: 'Первый клиент уже онлайн.'
+    },
+    'teaser.cta': { lv: 'Apskatīt darbus', ru: 'Посмотреть работы' },
+
+    /* work page (darbi.html) */
+    'work.label': { lv: 'Darbi', ru: 'Работы' },
+    'work.h1': {
+      lv: 'Tiešsaistē un <span class="kw">strādā.</span>',
+      ru: 'Онлайн и <span class="kw">работает.</span>'
+    },
+    'work.sub': {
+      lv: 'Katra mājaslapa šeit ir projektēta un uzkodēta no nulles. Atveriet un spriediet paši.',
+      ru: 'Каждый сайт здесь спроектирован и написан с нуля. Откройте и судите сами.'
+    },
+    'work.c1.meta': { lv: 'Autoserviss, Rīga', ru: 'Автосервис, Рига' },
+    'work.c1.desc': {
+      lv: 'Trīs valodas (LV/RU/EN), atsevišķas pakalpojumu lapas, piekabju katalogs, optimizēts Google meklēšanai.',
+      ru: 'Три языка (LV/RU/EN), отдельные страницы услуг, каталог прицепов, оптимизация под поиск Google.'
+    },
+    'work.c1.quote': {
+      lv: '[atsauksme vēl tiks pievienota]',
+      ru: '[отзыв будет добавлен позже]'
+    },
+    'work.visit': { lv: 'Apskatīt lapu', ru: 'Посмотреть сайт' },
+    'work.cta.lead': {
+      lv: 'Gribat savu <span class="kw">šajā lapā?</span>',
+      ru: 'Хотите свой <span class="kw">на этой странице?</span>'
+    },
     /* clients */
-    'clients.label': { lv: 'Klienti', ru: 'Клиенты' },
-    'clients.h':     { lv: 'Uzņēmumi, kuriem esam būvējuši.', ru: 'Компании, для которых мы строили.' },
+    'clients.label': { lv: 'Klients', ru: 'Клиент' },
+    'clients.h':     { lv: 'Kam esam būvējuši.', ru: 'Для кого мы строили.' },
     'clients.sub': {
       lv: 'Īsti projekti, kas darbojas jau šodien. Katra mājaslapa projektēta un uzkodēta no nulles.',
       ru: 'Настоящие проекты, которые работают уже сегодня. Каждый сайт спроектирован и написан с нуля.'
