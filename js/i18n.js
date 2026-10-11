@@ -181,10 +181,6 @@
       lv: 'Īsti projekti, kas darbojas jau šodien. Katra mājaslapa projektēta un uzkodēta no nulles.',
       ru: 'Настоящие проекты, которые работают уже сегодня. Каждый сайт спроектирован и написан с нуля.'
     },
-    'clients.c1.quote': {
-      lv: '[ Šeit ievietojiet RUM AUTO īstos vārdus ]',
-      ru: '[ Вставьте сюда настоящие слова RUM AUTO ]'
-    },
     'clients.c1.role': { lv: 'Autoserviss, Rīga', ru: 'Автосервис, Рига' },
     'clients.t1': { lv: 'Fiksēta cena, saskaņota rakstiski', ru: 'Фиксированная цена, согласованная письменно' },
     'clients.t2': { lv: 'Kods un domēns pieder jums', ru: 'Код и домен принадлежат вам' },

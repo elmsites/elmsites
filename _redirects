@@ -1,0 +1,13 @@
+# Cloudflare Pages - redirects
+# https://developers.cloudflare.com/pages/configuration/redirects/
+# One rule per line:  <from>  <to>  <status>
+
+# Send www to the apex domain. Harmless today (no www DNS record exists),
+# and already correct for the day you add one.
+https://www.elmsites.com/*  https://elmsites.com/:splat  301
+
+# Latvian-friendly alias for the work page.
+/darbi  /darbi.html  301
+
+# The old demo-fan anchor no longer exists on the home page.
+/index.html#demo-projekti  /darbi.html  301

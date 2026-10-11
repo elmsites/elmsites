@@ -1,0 +1,23 @@
+# Cloudflare Pages - response headers
+# https://developers.cloudflare.com/pages/configuration/headers/
+
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), interest-cohort=()
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://api.web3forms.com; form-action 'self'; frame-ancestors 'none'; base-uri 'self'; object-src 'none'
+
+# Fingerprint-free filenames, so cache conservatively and let
+# Cloudflare's edge do the heavy lifting.
+/css/*
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/js/*
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/images/*
+  Cache-Control: public, max-age=604800
+
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
