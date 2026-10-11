@@ -5,16 +5,16 @@ Static HTML/CSS/JS. No build step, no framework, no server code.
 | | |
 |---|---|
 | Repo | `github.com/elmsites/elmsites` |
-| Host (target) | Cloudflare Pages |
+| Host (target) | Cloudflare Workers (static assets) |
 | Host (current) | Vercel, project `elmsites` |
 | DNS | Squarespace (`nsb1-4.squarespacedns.com`) |
 | Email | Google Workspace (`MX smtp.google.com`) |
 
 ---
 
-## Cloudflare Pages settings
+## Cloudflare settings (Workers static assets)
 
-Workers & Pages -> Create -> Pages -> Connect to Git -> `elmsites/elmsites`
+Workers & Pages -> the `elmsites` Worker -> Settings -> Build, connected to `Koba115/elmsites`
 
 | Setting | Value |
 |---|---|
@@ -107,3 +107,17 @@ Requires two repository secrets: `CLOUDFLARE_API_TOKEN` (a token with the
 
 **Losing the MX record takes email down**, including the address the
 signup form sends to.
+---
+
+## Gotchas hit during the real migration
+
+**`_redirects` only accepts relative URLs here.** Workers static assets
+rejects absolute URLs at deploy time:
+`Invalid _redirects configuration: Only relative URLs are allowed [code: 100324]`.
+Cloudflare *Pages* allows them; Workers does not. Do www -> apex with a
+Redirect Rule in the dashboard (Rules -> Redirect Rules) instead.
+
+**`.assetsignore` is required.** With root directory `/`, wrangler uploads
+*everything* in the repo - including the entire `.git` directory, which
+would publish your full commit history on the live site. `.assetsignore`
+excludes it. If you ever change the assets directory, move that file too.

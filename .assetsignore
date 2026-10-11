@@ -1,0 +1,18 @@
+# Files in the repo that must NOT be published to the edge.
+# Same syntax as .gitignore.
+# https://developers.cloudflare.com/workers/static-assets/
+
+# The whole git history - serving this exposes every commit publicly,
+# which is what caused .git/objects/* to appear in the deploy log.
+.git
+.github
+
+# Local tooling / editor state
+.claude
+.mcp.json
+.vercel
+
+# Local dev server and docs - no reason to serve these
+server.ps1
+DEPLOY.md
+README.md
