@@ -12,6 +12,9 @@
 .mcp.json
 .vercel
 
+# wrangler build scratch - leaked no-op-worker.js.map onto the live site
+.wrangler
+
 # Local dev server and docs - no reason to serve these
 server.ps1
 DEPLOY.md

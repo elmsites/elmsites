@@ -1,12 +1,13 @@
 # Cloudflare Workers static assets - redirects
-# https://developers.cloudflare.com/workers/static-assets/routing/#redirects
-# One rule per line:  <from>  <to>  <status>
+# https://developers.cloudflare.com/workers/static-assets/routing/
 #
-# NOTE: only RELATIVE URLs are allowed here. An absolute URL (e.g.
-# https://www.elmsites.com/*) is rejected at deploy time with
-# "Only relative URLs are allowed [code: 100324]".
-# Send www -> apex with a Cloudflare Redirect Rule in the dashboard
-# instead (Rules -> Redirect Rules), not in this file.
+# Only RELATIVE URLs are allowed. An absolute URL is rejected at deploy
+# time with "Only relative URLs are allowed [code: 100324]".
+# Do www -> apex with a dashboard Redirect Rule, not here.
+#
+# Do NOT add a rule like "/darbi -> /darbi.html". Workers Assets already
+# serves extensionless paths (html_handling defaults to
+# auto-trailing-slash, redirecting /darbi.html -> /darbi), so such a rule
+# creates a redirect loop and the page stops loading entirely.
 
-# Latvian-friendly alias for the work page.
-/darbi  /darbi.html  301
+# (no redirects needed at present)
