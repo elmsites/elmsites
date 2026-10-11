@@ -19,6 +19,14 @@ while ($listener.IsListening) {
     if ($path -eq "/") { $path = "/index.html" }
     $file = Join-Path $root ($path.TrimStart("/"))
 
+    # Match Cloudflare Workers Assets: an extensionless path such as
+    # /about resolves to about.html. Without this, local dev 404s on
+    # every link while production works, or vice versa.
+    if (-not (Test-Path $file -PathType Leaf)) {
+      $withHtml = "$file.html"
+      if (Test-Path $withHtml -PathType Leaf) { $file = $withHtml }
+    }
+
     if (Test-Path $file -PathType Leaf) {
       $ext = [System.IO.Path]::GetExtension($file)
       $ct = $mime[$ext]
